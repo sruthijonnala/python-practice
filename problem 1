@@ -1,0 +1,12 @@
+#Given two integer numbers, write a Python code to return their product only if the product is equal to or lower than 1000. Otherwise, return their sum.
+
+def myfun(num1,num2):
+    product = num1*num2
+    if product<=1000:
+        return product
+    else:
+        return num1 + num2
+result = myfun(20,30)
+print('the result of 20,30 is :',result)
+result1 = myfun(40,30)
+print('the result of 40,30 is :',result1)
