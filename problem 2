@@ -1,0 +1,8 @@
+#Write a Python code to accept a string from the user and display characters present at an even index number. for ex word = pynative
+word = input('enter a number')
+str1 = list(word)
+for i in str1[::2]:
+    print(i)
+    
+str1 = input('enter a word:')
+print(str1[::2])
