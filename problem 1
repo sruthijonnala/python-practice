@@ -10,3 +10,16 @@ result = myfun(20,30)
 print('the result of 20,30 is :',result)
 result1 = myfun(40,30)
 print('the result of 40,30 is :',result1)
+
+#Write a Python program to get the largest number from a list.
+my_list = [1,2,3,4,5]
+max_num = 0
+for i in my_list:
+    if i > max_num:
+        max_num = i
+print(max_num)
+
+#sol 2
+for i in my_list:
+    if i >4:
+        print(i)
