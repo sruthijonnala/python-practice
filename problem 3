@@ -1,0 +1,4 @@
+# find area of right angle triangle
+l = int(input('enter length:'))
+b = int(input('enter breath/base:'))
+print(1/2*l*b)
