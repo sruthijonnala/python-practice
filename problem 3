@@ -2,3 +2,10 @@
 l = int(input('enter length:'))
 b = int(input('enter breath/base:'))
 print(1/2*l*b)
+
+#printing python in horizontal and vertical
+for i in 'python':
+    print(i, end=" ")
+    
+for i in 'python':
+  print(i)
