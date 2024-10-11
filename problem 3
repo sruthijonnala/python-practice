@@ -15,3 +15,9 @@ def num(x,y,z):
     sum = x+y+z
     return sum
 print(num(2,4,6))
+
+#calculate volume of sphear
+import math
+a = 6
+volume = 4/3*math.pi*(a**3)
+print(volume)
