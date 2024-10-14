@@ -21,3 +21,9 @@ import math
 a = 6
 volume = 4/3*math.pi*(a**3)
 print(volume)
+
+#calculate sum of three numbers
+def num(x,y,z):
+    sum = x+y+z
+    return sum
+print(num(2,4,6))
