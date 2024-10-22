@@ -1,0 +1,3 @@
+#replace in string
+name = 'living life to the fullest'
+print(name.replace('living','live'))
