@@ -1,0 +1,4 @@
+#replacing value in list
+friends = ['ramu','somu','rani','geetha']
+friends [2] = 'seeth','ramu'
+print(friends)
