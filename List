@@ -2,3 +2,9 @@
 friends = ['ramu','somu','rani','geetha']
 friends [2] = 'seeth','ramu'
 print(friends)
+
+#to insert value in list
+family = [ 'sruthi','yash','soumya']
+family.insert(3,'rajender')
+print(family)
+
