@@ -1,0 +1,85 @@
+fruits = ['apple','banana','cherry','dragon']
+fruits.reverse()
+print(fruits)
+
+fruits.sort() # ascending to desc
+print(fruits)
+
+fruits.insert(2,'unknown')
+print('inserted_list:',fruits)
+
+fruits.append('dragon')
+print('append_list:',fruits)
+
+fruits.remove('banana') #remove will take one arg in bracket and not takes index value
+print('removed:',fruits)
+
+fruits.pop()
+print('pop_list:',fruits)
+
+names = ('sruthi','kavya')
+fruits.extend(names)
+print('extended_List:',fruits)
+
+
+fruits.remove('dragon')
+print(fruits)
+
+fruits.copy
+print(fruits)
+
+a = ('hello good evening every one')
+b = a.index('one')
+print(b)
+
+x = 'google.com'    
+q = x.count('o')
+r = x.count('l')
+s = x.count('e')
+t = x.count('c')
+u = x.count('m')
+print(q,r,s,t,u)
+
+import array
+sent1 = array.array ('f',(2.5,3.5,4.5))
+print(sent1.typecode)
+----------------------------------------------------------------
+
+import array as arr
+a = arr.array('i',[1,2,3,4,5])
+print('the new array is:',end=" ")
+print(a)
+
+b = arr.array('d',[2.5,3.5,4.5])
+print('array of float:',end=" ")
+b.append(5.5)
+print(b)
+
+#output without array and datatype
+b = arr.array('d',[2.5,3.5,4.5])
+print('array of float:',end=" ")
+for i in (b):
+    print(i,end=" ")
+print()
+------------------------------------------------------------------
+#find middle element
+odd_array = arr.array('i', [10, 20, 30, 40, 50,60,70])
+n = len(odd_array)
+midindex = n//2
+if n % 2 == 1:
+    midelement = odd_array[midindex]
+    print(midelement)
+else:
+    midelement= (odd_array[midindex-1],odd_array[midindex])
+    print(midelement)
+    
+even_array = arr.array('i',[1,2,3,4,5,6])
+n = len(even_array)
+midindex = n//2
+if n % 2 == 0:
+    midelement = (even_array[midindex-1],even_array[midindex])
+    print(midelement)
+else:
+    midelement = even_array[midindex]
+    print(midelement)
+
