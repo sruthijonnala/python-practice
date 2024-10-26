@@ -1,0 +1,27 @@
+marks = [40,50,68,20,89,82,35]
+index = 0
+for i in marks:
+    if i >50:
+        print(f"{i}: Pass")
+    else:
+        print(f"{i}: fail")
+    index += 1
+    
+marks = [40,50,68,20,89,82,35]
+index = 0
+for i in marks:
+    if i >50:
+        print("Pass")
+    else:
+        print("fail")
+    index += 1
+#using while loop
+marks = [40, 50, 68, 20, 89, 82, 35]
+index = 0
+
+while index < len(marks):
+    if marks[index] > 50:
+        print(f"{marks[index]} = pass")
+    else:
+        print(f"{marks[index]} = fail")
+    index += 1
