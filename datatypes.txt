@@ -1,0 +1,14 @@
+#Data types
+#fundamental datatypes : str,int,float,complex,boolean
+#other datatypes : bytes,bytearray,range,tuple,set,frozenset,dict
+name = 'sruthi'
+print(type(name),end=" ")
+print(name)
+
+number = 500
+print(type(number))
+print(number)
+
+#casting
+number1 = float(500)
+print(number1)
