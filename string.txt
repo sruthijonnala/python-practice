@@ -1,0 +1,75 @@
+#in keyword in string 
+a = 'living life to the fullest'
+print('life' in a)
+
+a = 'living life to the fullest'
+print('fullfill' not in a)
+
+a = 'living life to the fullest'
+if 'living' in a :
+  print('yes present')
+  
+  
+a = 'living life to the fullest'
+if not 'live' in a:
+    print('not present in string')
+    
+a = 'living life to the fullest'
+print(len(a))
+
+
+b = ['apple','banana','cherry']
+b.clear()
+print(b)
+
+
+age = 22
+statment = f'how old are you,{age}'
+print(statment)
+
+num = 123456
+sent = f'i know,{num}'
+print(sent)
+
+
+#string and its methods
+--> isalpha(),isalnum(),index(),find(),count(),captilize(),isdigit(),islower(),isnumeric()
+endswith(),upper(),title(),swapcase(),strip(),startswith(),split(),join(),lower(),replace()
+
+---> isalpha(),isalnum(),startswith(),endswith()
+these methods output be like true or false
+
+
+#to remove the white space from begning or ending
+name = 'living  life to the fullest'
+print(name.strip())
+
+#replace in string
+name = 'living life to the fullest'
+print(name.replace('living','live'))
+
+#using split()
+name = 'living life to the fullest'
+print(name.split('to'))
+
+#using escape \
+x = 'he is living in \"london\"'
+print(x)
+
+#using upper()
+name = 'living life to the fullest'
+print(a.upper())
+
+txt = 'i am learning python'
+sen = txt.find('apple')
+print(sen)
+#output will be -1
+#Returns the index of the first occurrence of a substring, or -1 if not found.
+
+txt = 'i am learning python'
+sen = txt.index('apple')
+print(sen)
+#output will be an error
+#Similar to find() but raises a ValueError if the substring is not found.
+
+
