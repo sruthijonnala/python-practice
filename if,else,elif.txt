@@ -1,0 +1,28 @@
+aman,vinod = 90,90
+if aman == vinod:
+    print('both are same')
+elif vinod == aman:
+    print('both are same')
+else:
+    print('not same')
+    
+print('---------------')
+
+rama,sita = 50,50
+if rama == sita:
+    print('rama,sita are same')
+if sita == rama:
+    print('sita,rama are same')
+else:
+    print('rama,sita are not same')
+
+#nested if    
+marks = 70
+if marks > 25:
+    print('he is pass')
+    if marks > 90:
+        print('his grade is A') 
+    else:
+        print('his grade is not A')
+else:
+    print('he is fail')
