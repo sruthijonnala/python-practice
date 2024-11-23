@@ -1,0 +1,248 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyO96YCzYiCmlprbI7KGG473",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sruthijonnala/python-problems/blob/main/Types%20of%20functions\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def funname():\n",
+        "  print('hello good morning')\n",
+        "funname()"
+      ],
+      "metadata": {
+        "id": "QeIyhU9ZbFAV",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "57b55694-dd19-4667-835b-de780e75cad9"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello good morning\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Types of arguments:\n",
+        "\n",
+        "\n",
+        "*   Positional Arguments\n",
+        "*   Keyword Arguments\n",
+        "*   Default Arguments\n",
+        "*   Arbitary Arguments\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "_oKoobIfb_h4"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Positional Arguments explanation with examples\n",
+        "\n",
+        "def addition(a,b):\n",
+        "  return a+b\n",
+        "print(addition(10,20))\n",
+        "#here arguments 10, 20  is storing in parameter a, b\n",
+        "\n",
+        "def numbers(a,b,c):\n",
+        "  return a,b,c\n",
+        "a = 1\n",
+        "b = 2\n",
+        "c = 3\n",
+        "print(numbers(c,b,a))\n",
+        "# here arguments are given in reverse order output : 3,2,1 but parameter values are : 1,2,3\n",
+        "# so by giving arguments in reverse order c value is storing in a parameter and b value storing in b argument\n",
+        "\n",
+        "def person_info(name,age):\n",
+        "  print('hi i am', name)\n",
+        "  print('my age is', age)\n",
+        "\n",
+        "# You will get correct output because\n",
+        "# argument is given in order\n",
+        "print('--case 1')\n",
+        "person_info('sruthi',22)\n",
+        "\n",
+        "# You will get incorrect output because\n",
+        "# argument is not in order\n",
+        "print('--case 2')\n",
+        "person_info(22,'sruthi')\n",
+        "\n",
+        "#if we want to get the correct format in result ww have to give arguments based on parameters\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "X8EBgYfYcD4h",
+        "outputId": "1ae9feee-c5e4-4636-eae7-936f633e8511"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "30\n",
+            "3 2 1\n",
+            "--case 1\n",
+            "hi i am sruthi\n",
+            "my age is 22\n",
+            "--case 2\n",
+            "hi i am 22\n",
+            "my age is sruthi\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Keyword arguments\n",
+        "def students(roll1,roll2,roll3):\n",
+        "  return roll1,roll2,roll3\n",
+        "\n",
+        "print(students( roll1 = 'thomas',roll2 = 'nick', roll3 = 'jhon'))\n",
+        "\n",
+        "\n",
+        "def students(roll1,roll2,roll3):\n",
+        "  return roll1,roll2,roll3\n",
+        "\n",
+        "print(students(roll2 = 'nick', roll1 = 'thomas', roll3 = 'jhon'))\n",
+        "\n",
+        "#here in function call values are asining to the parameters\n",
+        "#what ever format we give in function call result values give based on the sequence of parameters\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tHyW7vE1cxu_",
+        "outputId": "2b394b36-f6a6-4979-9525-f7e8ab5cf9ad"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "('thomas', 'nick', 'jhon')\n",
+            "('thomas', 'nick', 'jhon')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Default arguments\n",
+        "def numbers(a=10,b=20,c=30):\n",
+        "  return a,b,c\n",
+        "print(numbers())\n",
+        "#if we did not give arguments in fuction call even though result is shown because values are assigned in parameters only\n",
+        "#using default parameter values\n",
+        "\n",
+        "def numbers1(x=40,y=50,z=60):\n",
+        "  return x,y,z\n",
+        "print(numbers1(1,2,3))\n",
+        "\n",
+        "#if we give values in function call they wont take default parameter values"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "WLPclZPhn8GT",
+        "outputId": "7fba5baa-a2d2-4817-e940-f8402b9d64fc"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(10, 20, 30)\n",
+            "(1, 2, 3)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Arbitary Arguments\n",
+        "def info(*arg):\n",
+        "  print(*arg)\n",
+        "info('apple','banana','cherry','guvava')\n",
+        "# * give in list format\n",
+        "\n",
+        "def info(**arg1):\n",
+        "  print(arg1)\n",
+        "info(name = 'sruthi', age = 22, name1 = 'yash', age1 = 21)\n",
+        "#** give in dictionary format\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1aQmAsFPqq4i",
+        "outputId": "66ed2948-cc82-419b-8bcf-a20533621c7c"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "apple banana cherry guvava\n",
+            "{'name': 'sruthi', 'age': 22, 'name2': 'yash', 'age2': 21}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "sTFUxwkZs_U9"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
