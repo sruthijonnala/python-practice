@@ -70,6 +70,6 @@ txt = 'i am learning python'
 sen = txt.index('apple')
 print(sen)
 #output will be an error
-##Similar to find() but raises a ValueError if the substring is not found.
+##Similar to find() but raises a ValueError if the substring is not found
 
 
