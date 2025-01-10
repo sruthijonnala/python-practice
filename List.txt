@@ -32,3 +32,5 @@ print(list1)
 mylist = ['apple','banana','cherry']
 x = mylist.index('cherry')
 print(x)
+
+
