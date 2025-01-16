@@ -1,4 +1,4 @@
-#Data types
+#Data Types
 #fundamental datatypes : str,int,float,complex,boolean
 #other datatypes : bytes,bytearray,range,tuple,set,frozenset,dict
 name = 'sruthi'
