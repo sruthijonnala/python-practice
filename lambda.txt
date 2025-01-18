@@ -4,4 +4,4 @@ x = lambda arr,v : true if v in arr else false
 if v in arr:
     print('element is present')
 else:
-    print('element is not present')
+    print( 'element is not present' )
