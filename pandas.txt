@@ -1,0 +1,37 @@
+import pandas as pd
+a = ['sruthi','yash','soumya','rajender','komraiah','lakshmi']
+data = pd.Series(a)
+data = pd.Series(a, index =['a','b','c','d','e','f'])
+print(data)
+
+#labels #locating
+print(data['e'])
+
+#we can also create series with dictinories
+set = {'sruthi': 22,'yash': 20,'soumya': 42,'rajender': 43,'komraiah': 62,'lakshmi': 58}
+age = pd.Series(set)
+print(age)
+#to find the age of sruthi and lakshmi
+age=pd.Series(set, index = ['sruthi','lakshmi'])
+print(age)
+
+#Dataframes : table with rows and columns
+a = {'name' : ['sruthi','yash','soumya','rajender','komraiah','lakshmi'],
+'gender':['f','m','f','m','m','f']}
+info = pd.DataFrame(a)
+info = pd.DataFrame(a, index =['a','b','c','d','e','f'])
+print(info)
+
+#for locating rows in dataframes loc is used
+print(info.loc[['c','d']])
+
+#importing datasets into dataframes
+#df = pd.read_csv('Reaction Types.csv')
+#print(df)
+
+#to print max rows in system
+print(pd.options.display.max_rows)
+
+#to increase max rows
+pd.options.display.max_rows = 99
+print(pd.options.display.max_rows)
